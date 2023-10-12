@@ -6,10 +6,7 @@
 
 ## How to run the project
 
-- Clone this repository:
-```bash
-git clone https://github.com/bun137/rock-paper-scissors.git
-```
+- Clone this repository
 - Change directories using `cd` command
 - Install Python 3.7.4 or higher.
 - Install PyQt5 with this command:
