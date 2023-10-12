@@ -10,6 +10,7 @@
 ```bash
 git clone https://github.com/bun137/rock-paper-scissors
 ```
+- Change directories using `cd` command
 - Install Python 3.7.4 or higher.
 - Install PyQt5 with this command:
 ```bash
