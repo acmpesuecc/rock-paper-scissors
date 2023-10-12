@@ -17,7 +17,7 @@ pip install PyQt5
 ```
 - Run the project with this command:
 ```bash
-`python rps.py`
+python rps.py
 ```
 - Feel free to approach me with any questions you may have.
 
