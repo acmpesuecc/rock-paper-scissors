@@ -8,7 +8,7 @@
 
 - Clone this repository:
 ```bash
-git clone https://github.com/bun137/rock-paper-scissors
+git clone https://github.com/bun137/rock-paper-scissors.git
 ```
 - Change directories using `cd` command
 - Install Python 3.7.4 or higher.
