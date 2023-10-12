@@ -23,7 +23,7 @@ python rps.py
 - Feel free to approach me with any questions you may have.
 
 
-## Authors
+## Maintainer
 [Shreya Gurram](https://github.com/bun137/)
 
 Email Id: [gurram13775@gmail.com](mailto:gurram13775@gmail.com)
