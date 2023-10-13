@@ -48,8 +48,11 @@ class rockpaperscissors(QMainWindow):
             userBull = 0
         elif self.paper.isChecked():
             userBull = 1
-        else:
+        elif self.scissor.ischecked():
             userBull = 2
+        else:
+            pass    
+       
 
         compBull = random.randint(0, 3)
 
