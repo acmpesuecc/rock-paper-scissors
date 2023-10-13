@@ -28,7 +28,7 @@ class rockpaperscissors(QMainWindow):
         self.heading.setText(
             "heyy, hi! so umm\n'0' - Rock\n'1' - Paper\n'2' - Scissors\nChoose onee!! : "
         )
-
+        self.setStyleSheet("background-image : url(streetfighter.jpeg);background-repeat: no-repeat;background-position: center;")
         self.computer_win_sound = QSoundEffect()
         self.computer_win_sound.setSource(QUrl.fromLocalFile("youLose.wav"))
 
