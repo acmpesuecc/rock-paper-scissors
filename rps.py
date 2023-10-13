@@ -48,8 +48,11 @@ class rockpaperscissors(QMainWindow):
             userBull = 0
         elif self.paper.isChecked():
             userBull = 1
-        else:
+        elif self.scissors.isChecked():
             userBull = 2
+        else:
+            self.output.setText(">_< input your move\n")
+            return
 
         compBull = random.randint(0, 3)
 
