@@ -35,13 +35,16 @@ class rockpaperscissors(QMainWindow):
         self.user_win_sound = QSoundEffect()
         self.user_win_sound.setSource(QUrl.fromLocalFile("youWin.wav"))
 
+        self.tie_sound = QSoundEffect()
+        self.tie_sound.setSource(QUrl.fromLocalFile("youTied.wav"))
+
     def play_sound(self, outcome):
         if outcome == "computer_win":
             self.computer_win_sound.play()
         elif outcome == "user_win":
             self.user_win_sound.play()
-        # elif outcome == "tie":
-        #     self.tie_sound.play()
+        elif outcome == "tie":
+            self.tie_sound.play()
 
     def shooted(self):
         if self.rock.isChecked():
@@ -55,7 +58,7 @@ class rockpaperscissors(QMainWindow):
 
         if userBull == compBull:
             self.output.setText("woah, its a tie\n")
-            # self.play_sound("tie")
+            self.play_sound("tie")
         elif (
             (userBull == 0 and compBull == 2)
             or (userBull == 1 and compBull == 0)
