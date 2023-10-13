@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Computeri:</string>
+     <string></string>
     </property>
    </widget>
    <widget class="QWidget" name="horizontalLayoutWidget">
@@ -115,7 +115,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>you-i:</string>
+     <string></string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -128,7 +128,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Scores:</string>
+     <string></string>
     </property>
    </widget>
    <widget class="QLabel" name="output">
@@ -214,7 +214,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>won! :yay:</string>
+     <string></string>
     </property>
    </widget>
    <widget class="QLabel" name="winloseuser2">
@@ -227,7 +227,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>won! :yay:</string>
+     <string></string>
     </property>
    </widget>
    <widget class="QLabel" name="winloseuser3">
@@ -240,7 +240,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>won! :yay:</string>
+     <string></string>
     </property>
    </widget>
    <widget class="QLabel" name="winloseuser1">
@@ -253,7 +253,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>you lost -_-</string>
+     <string></string>
     </property>
    </widget>
    <widget class="QLabel" name="winlosecomp2">
@@ -266,7 +266,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>~lost the game~</string>
+     <string></string>
     </property>
    </widget>
    <widget class="QLabel" name="winlosecomp3">
@@ -279,7 +279,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>~lost the game~</string>
+     <string></string>
     </property>
    </widget>
    <widget class="QPushButton" name="shoot">
