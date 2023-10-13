@@ -9,6 +9,12 @@
 - Clone this repository
 - Change directories using `cd` command
 - Install Python 3.7.4 or higher.
+
+- Install qtwayland5 for ubuntu system:
+```bash
+apt install qtwayland5
+```
+
 - Install PyQt5 with this command:
 ```bash
 pip install PyQt5
