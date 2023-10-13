@@ -18,6 +18,7 @@ import random
 #         print("you just got lucky for once- ugh fine you win\n")
 #     else :
 #         print("haha I the computeri winsss!!!!!!\n")
+
 class rockpaperscissors(QMainWindow):
     def __init__(self):
         super(rockpaperscissors, self).__init__()
@@ -48,11 +49,17 @@ class rockpaperscissors(QMainWindow):
             userBull = 0
         elif self.paper.isChecked():
             userBull = 1
-        else:
+        elif self.scissors.isChecked():
             userBull = 2
+        else:
+            userBull = -1
 
         compBull = random.randint(0, 3)
 
+        if userBull == -1:
+            self.output.setText("Please enter an input first\n")
+            return
+        
         if userBull == compBull:
             self.output.setText("woah, its a tie\n")
             # self.play_sound("tie")
