@@ -9,6 +9,8 @@ from PyQt5.QtMultimedia import QSoundEffect
 import random
 
 
+p_score_log=[]
+c_score_log=[]
 # while(True):
 #     userBull = int (input("heyy, hi! so umm\n'0' - Rock\n'1' - Paper\n'2' - Scissors\nChoose onee!! : "))
 #     compBull= random.randint(0,3)
@@ -55,6 +57,8 @@ class rockpaperscissors(QMainWindow):
 
         if userBull == compBull:
             self.output.setText("woah, its a tie\n")
+            c_score_log.append(1)
+            p_score_log.append(1)
             # self.play_sound("tie")
         elif (
             (userBull == 0 and compBull == 2)
@@ -62,11 +66,29 @@ class rockpaperscissors(QMainWindow):
             or (userBull == 2 and compBull == 1)
         ):
             self.output.setText("you just got lucky for once- ugh fine you win\n")
+            c_score_log.append(0)
+            p_score_log.append(2)
             self.play_sound("user_win")
         else:
             self.output.setText("haha I the computeri winsss!!!!!!\n")
+            c_score_log.append(2)
+            p_score_log.append(0)
             self.play_sound("computer_win")
 
+        if len(c_score_log)==3:
+            if sum(p_score_log)>sum(c_score_log):
+                self.output.setText("Whoa, you won the best of 3!\n")
+                c_score_log.clear()
+                p_score_log.clear()
+            elif sum(p_score_log)<sum(c_score_log):
+                self.output.setText("haha I the computeri wins the best of 3!!!!!!\n")
+                c_score_log.clear()
+                p_score_log.clear()
+            else:
+                self.output.setText("Looks like its still a draw, lets do another best of 3 again.")
+                c_score_log.clear()
+                p_score_log.clear()
+    
 
 app = QApplication(sys.argv)
 widget = QtWidgets.QStackedWidget()
